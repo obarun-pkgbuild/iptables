@@ -7,13 +7,11 @@ pkgname=iptables
 pkgver=1.6.1
 pkgrel=2
 pkgdesc='Linux kernel packet control tool'
-arch=('i686' 'x86_64')
+arch=('x86_64')
 license=(GPL2)
 url='http://www.netfilter.org/projects/iptables/index.html'
 depends=('glibc' 'bash' 'libnftnl' 'libpcap')
 makedepends=('linux-api-headers')
-optdepends=('iptables-runitserv: iptables runit service'
-			'ip6tables-runitserv: ip6tables runit service')
 source=(http://www.netfilter.org/projects/iptables/files/${pkgname}-${pkgver}.tar.bz2 \
         empty.rules
         simple_firewall.rules
